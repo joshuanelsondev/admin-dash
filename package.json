@@ -2,6 +2,7 @@
   "name": "admin-dash",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://joshuanelsondev.github.io/admin-dash/"
   "type": "module",
   "scripts": {
     "dev": "vite",
