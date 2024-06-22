@@ -8,7 +8,7 @@ import Dashboard from './components/Dashboard/Dashboard'
 function Layout() {
   return (
     <div className='layout'>
-      <Dashboard /> 
+      <Dashboard />
       <Header />
       <Outlet />
     </div>
@@ -17,11 +17,11 @@ function Layout() {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/admin-dash',
     element: <Layout />,
     children: [
       {
-        path: '/',
+        path: '/admin-dash',
         element: <Homepage />
       }
     ]
