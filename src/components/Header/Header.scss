@@ -1,0 +1,120 @@
+// Header.scss
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .7em 3em;
+  box-shadow: 0px 3px 5px #CDD2D9;
+  min-width: max-content;
+  z-index: 1;
+
+  &__top, &__top-right, &__form, &__bottom, &__bottom-left, &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__top {
+    gap: 6em;
+    justify-content: space-between;
+  }
+
+  &__top-right {
+    width: 30%;
+    justify-content: end;
+    gap: 1.5em;
+  }
+
+  &__form {
+    width: 100%;
+    gap: 1em;
+
+  }
+
+  &__search {
+    height: 1.8em;
+    width: 100%;
+    border-radius: 2em;
+    border: none;
+    background: #E2E8F0;
+    padding-left: 1em;
+
+    &:focus, &:focus-visible, &:focus-within {
+      outline: 2px solid #1A92D3;
+    }
+  }
+
+  &__username-sm {
+    width: max-content;
+    font-size: .8em;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  &__notifications {
+    height: 1em;
+    width: 1em;
+    flex-shrink: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__bottom {
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  &__bottom-left {
+    gap: .75em;
+
+  }
+
+
+  &__greet-user {
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  &__greet {
+    font-size: .8em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__avatar-sm {
+    height: 35px;
+    width: auto;
+  }
+
+  &__avatar-lg, {
+    height: 50px;
+    width: auto;
+  }
+
+  &__username-lg {
+    font-weight: 800;
+    margin: 0;
+  }
+
+  &__nav {
+    gap: 1.5em;
+  }
+
+  &__button {
+    border: none;
+    background-color: #1A92D3;
+    color: white;
+    font-size: .8em;
+    font-weight: 600;
+    border-radius: 1.5em;
+    width: 6em;
+    padding: .6em 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}

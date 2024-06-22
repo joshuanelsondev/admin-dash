@@ -1,0 +1,47 @@
+// Announcements.scss
+
+.announcements-container {
+  display: grid;
+  justify-content: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.announcements-header {
+  margin: 0;
+  text-align: left;
+  font-weight: 500;
+}
+
+.announcements {
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0 3px 4px #CDD2D9;
+  box-sizing: border-box;
+  padding: 1.4em;
+  height: 18em;
+  width: 18em;
+
+  &__group {
+    text-align: left;
+    padding: 0.3em;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 0.7em;
+    color: #565656;
+    line-height: 1.2em;
+  }
+
+  &__line {
+    background-color: #cdd2d9;
+    border: none;
+    height: 1px;
+  }
+}
