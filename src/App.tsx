@@ -17,11 +17,11 @@ function Layout() {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/admin-dash/',
     element: <Layout />,
     children: [
       {
-        path: '/',
+        path: '/admin-dash/',
         element: <Homepage />
       }
     ]
