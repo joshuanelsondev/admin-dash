@@ -1,35 +1,28 @@
-// App.tsx
-import { createBrowserRouter, RouterProvider, Outlet  } from 'react-router-dom'
-import './App.scss'
-import Header from './components/Header/Header'
-import Homepage from './pages/Homepage'
-import Dashboard from './components/Dashboard/Dashboard'
+//App.tsx
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Header from './components/Header/Header';
+import Homepage from './pages/Homepage';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function Layout() {
   return (
     <div className='layout'>
       <Dashboard />
       <Header />
-      <Outlet />
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+      </Routes>
     </div>
-  )
+  );
 }
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      {
-        path: '/',
-        element: <Homepage />
-      }
-    ]
-  }
-])
 
 function App() {
-    return <RouterProvider router={router} />
+  return (
+    <Router basename="/admin-dash">
+      <Layout />
+    </Router>
+  );
 }
 
-export default App
+export default App;
